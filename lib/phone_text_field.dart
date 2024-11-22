@@ -172,8 +172,8 @@ class _PhoneTextFieldState extends State<PhoneTextField> {
 
   String? validatorMessage;
 
-  late TextEditingController controller;
-  int maxLength = 0;
+   TextEditingController controller= TextEditingController();
+  int maxLength = 1;
   List<Country> updateDialCodeWithId(List<Country> countries, List<CountryAPI> countryAPIs) {
     return countries.map((country) {
       final matchedAPI = countryAPIs.firstWhere(
