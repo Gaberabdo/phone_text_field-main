@@ -298,8 +298,8 @@ class _PhoneTextFieldState extends State<PhoneTextField> {
           }
         });
         final phoneNumber = PhoneNumber(
-          countryISOCode: _selectedCountry.code,
-          countryCode: '+${_selectedCountry.fullCountryCode}',
+          countryISOCode: _selectedCountry.dialCode,
+          countryCode: '+${_selectedCountry.dialCode}',
           number: value,
         );
 
